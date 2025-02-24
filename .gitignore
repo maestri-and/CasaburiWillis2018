@@ -1,3 +1,6 @@
+# Custom ignore
+original_package/data
+
 # History files
 .Rhistory
 .Rapp.history
