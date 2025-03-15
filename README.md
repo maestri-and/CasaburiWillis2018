@@ -1,7 +1,4 @@
-# CasaburiWillis2018
-R replication package for main exhibits of Casaburi &amp; Willis (AER, 2018).
-
-# R Replication Package for Casaburi &amp; Willis (AER, 2018).
+# R Replication Project for Casaburi &amp; Willis (AER, 2018).
 
 **Authors:** MAESTRI Andrea & BENRAMDANE Ali
 
