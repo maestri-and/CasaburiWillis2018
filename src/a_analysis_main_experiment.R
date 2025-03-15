@@ -451,8 +451,6 @@ run_het_regressions <- function(vars_list, col_labels, table_title, out_file,
     order = c("X × Pay At Harvest", "X", "Pay At Harvest"),
     column.labels = final_labels,
     omit.stat = c("n", "rsq", "adj.rsq", "f", "ser"),  # remove stargazer's "Observations" line
-    star.cutoffs = NA,    # no stars
-    star.char = c(),      # ensure no star characters
     model.numbers = col_numbers,  # (1), (2), (3), ...
     omit = c("factor\\(fid1\\)", "Constant"),
     add.lines = list(
@@ -473,8 +471,6 @@ run_het_regressions <- function(vars_list, col_labels, table_title, out_file,
     order = c("X × Pay At Harvest", "X", "Pay At Harvest"),
     column.labels = final_labels,
     omit.stat = c("n", "rsq", "adj.rsq", "f", "ser"),
-    star.cutoffs = NA,
-    star.char = c(),
     model.numbers = col_numbers,
     omit = c("factor\\(fid1\\)", "Constant"),
     add.lines = list(
