@@ -9,16 +9,16 @@
 # Instantiate repo dependencies
 renv::restore()
 
-# Installing main packages 
-install.packages("dplyr")
-install.packages("ggplot2")
-install.packages("sandwich")
-install.packages("fixest")
-install.packages("stargazer")   # To output nice tables 
-install.packages("haven")       # To read .dta files
-install.packages("skimr")       # To produce descriptive statistics
-install.packages("lmtest")
-install.packages("car")
+# Installing required packages, if needed
+packages <- c("dplyr", "ggplot2", "sandwich", "fixest", 
+              "stargazer", "haven", "skimr", "lmtest", "car")
+
+# Detect and install only missing packages
+new_packages <- packages[!(packages %in% installed.packages()[, "Package"])]
+
+if (length(new_packages) > 0) {
+  install.packages(new_packages)
+}
 
 # Take snapshot - Use after updating repo dependencies
-renv::snapshot()
+# renv::snapshot()

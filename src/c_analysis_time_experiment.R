@@ -39,7 +39,7 @@ a_list_with_m <- c()
 x_list_with_m <- c()
 
 # Define a function to process each list
-process_list <- function(var_list) {
+process_list <- function(var_list, data) {
   new_vars <- c()
   for (x in var_list) {
     if (x %in% colnames(data)) {
@@ -53,12 +53,16 @@ process_list <- function(var_list) {
       new_vars <- c(new_vars, x, paste0("m_", x))
     }
   }
-  return(new_vars)
+  return(list(new_vars, data))
 }
 
 # Process lists and store the results
-a_list_with_m <- process_list(a_list)
-x_list_with_m <- process_list(x_list)
+a_list_with_m <- process_list(a_list, data)
+data <- a_list_with_m[[2]]
+a_list_with_m <- a_list_with_m[[1]]
+x_list_with_m <- process_list(x_list, data)
+data <- x_list_with_m[[2]]
+x_list_with_m <- x_list_with_m[[1]]
 
 ##### 2. ESTIMATING TABLE 5: TIME EXPERIMENT TABLE #####
 
@@ -189,7 +193,3 @@ p <- ggplot(collapsed_data, aes(x = factor(treatment), y = mean_tookup, fill = f
 
 # Save the figure
 ggsave("output/Figures/Figure5.jpg", plot = p, width = 8, height = 6, units = "in", dpi = 300)
-
-
-
-

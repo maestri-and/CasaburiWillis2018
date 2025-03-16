@@ -142,7 +142,7 @@ collapsed_data <- collapsed_data %>%
       .default = 0
     )
   ) %>%
-  mutate(l = mean_tookup - ci95, h = mean_tookup + ce95)
+  mutate(l = mean_tookup - ci95, h = mean_tookup + ci95)
 
 # Prepare 'mean2' and 'mean3' for scatter plot
 collapsed_data <- collapsed_data %>%
