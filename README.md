@@ -10,7 +10,7 @@
 
 The R code scripts replicate five key exhibits published by Casaburi &amp; Willis in "Time versus State in Insurance: Experimental Evidence from Contract Farming in Kenya" (AER, 2018).
 
-All data was made publicly available by the authors. The original code, written in STATA, along with the data, can be found in the folder 'original_package/do' within this remote repository. Access to the published original package can be accessed [here](https://www.aeaweb.org/articles?id=10.1257/aer.20171526) with the appropriate credentials.
+All data was made publicly available by the authors. The original code, written in STATA, along with the data, can be found in the folder 'original_package/do' within this remote repository. The published original package can be accessed [here](https://www.aeaweb.org/articles?id=10.1257/aer.20171526) with the appropriate credentials.
 
 ## Description of key folders
 - `./data`: contains the three datasets used for this project, including `data_cashexp.dta`, `data_mainexp.dta` and `data_timeexp.dta`
