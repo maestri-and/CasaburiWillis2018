@@ -14,6 +14,7 @@ All data was made publicly available by the authors. The original code, written 
 
 ## Description of key folders
 - `./data`: contains the three datasets used for this project, including `data_cashexp.dta`, `data_mainexp.dta` and `data_timeexp.dta`
+- `./docs`: contains a .pdf file commenting the replicated tables and figures
 - `./original_package/do`: contains the original STATA code files
 - `./output`: folder where all outputs produced by the R code scripts are saved; figures are stored in jpg format, while tables are saved in LaTeX file formats.
 - `./src`: contains the three key R script files replicating the five chosen exhibits. 
